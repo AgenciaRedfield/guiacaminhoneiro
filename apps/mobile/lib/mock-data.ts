@@ -1,0 +1,63 @@
+import type { Place } from "@guia/types";
+
+export const mobilePlaces: Place[] = [
+  {
+    id: "plc-1",
+    ownerId: "usr-partner-1",
+    categoryId: "cat-1",
+    name: "Posto Serra Azul",
+    description: "Diesel, banho, patio seguro e restaurante 24h.",
+    approved: true,
+    featured: true,
+    acceptsLargeTruck: true,
+    acceptsTrailer: true,
+    acceptsBitrem: true,
+    phone: "11940000001",
+    whatsapp: "11940000001",
+    address: "BR-116, Km 224",
+    city: "Guarulhos",
+    state: "SP",
+    latitude: -23.457,
+    longitude: -46.533,
+    rating: 4.7,
+    reviewsCount: 18,
+    services: [
+      { id: "svc-1", placeId: "plc-1", name: "Banho" },
+      { id: "svc-2", placeId: "plc-1", name: "Patio seguro" }
+    ],
+    photos: [],
+    openingHours: ["Seg-Dom 24h"],
+    distanceFromRouteKm: 1.2,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  },
+  {
+    id: "plc-2",
+    ownerId: "usr-partner-1",
+    categoryId: "cat-4",
+    name: "Ponto de Apoio Via Forte",
+    description: "Dormitorio, refeitorio e apoio na estrada.",
+    approved: true,
+    featured: false,
+    acceptsLargeTruck: true,
+    acceptsTrailer: true,
+    acceptsBitrem: true,
+    phone: "11940000003",
+    whatsapp: "11940000003",
+    address: "Anhanguera, Km 92",
+    city: "Jundiai",
+    state: "SP",
+    latitude: -23.185,
+    longitude: -46.897,
+    rating: 4.8,
+    reviewsCount: 25,
+    services: [
+      { id: "svc-3", placeId: "plc-2", name: "Dormitorio" }
+    ],
+    photos: [],
+    openingHours: ["Seg-Dom 24h"],
+    distanceFromRouteKm: 0.6,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  }
+];

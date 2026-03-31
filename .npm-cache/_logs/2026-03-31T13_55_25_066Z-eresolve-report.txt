@@ -1,0 +1,42 @@
+'Log files:
+C:\xampp\htdocs\Guia do Caminhoneiro\.npm-cache\_logs\2026-03-31T13_55_25_066Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: @guia/web@0.1.0
+Found: react-dom@19.0.0
+apps/web/node_modules/react-dom
+  peer react-dom@"^19.0.0" from @react-leaflet/core@3.0.0
+  apps/web/node_modules/@react-leaflet/core
+    @react-leaflet/core@"^3.0.0" from react-leaflet@5.0.0
+    apps/web/node_modules/react-leaflet
+  peer react-dom@"^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0" from next@15.2.0
+  apps/web/node_modules/next
+    next@"15.2.0" from @guia/web@0.1.0
+    apps/web
+      @guia/web@0.1.0
+      node_modules/@guia/web
+        workspace apps\web from the root project
+  peer react-dom@"^19.0.0" from react-leaflet@5.0.0
+  apps/web/node_modules/react-leaflet
+
+Could not resolve dependency:
+react-dom@"18.3.1" from @guia/web@0.1.0
+apps/web
+  @guia/web@0.1.0
+  node_modules/@guia/web
+    workspace apps\web from the root project
+
+Conflicting peer dependency: react@18.3.1
+node_modules/react
+  peer react@"^18.3.1" from react-dom@18.3.1
+  node_modules/react-dom
+    react-dom@"18.3.1" from @guia/web@0.1.0
+    apps/web
+      @guia/web@0.1.0
+      node_modules/@guia/web
+        workspace apps\web from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

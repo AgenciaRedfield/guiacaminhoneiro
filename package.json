@@ -1,0 +1,21 @@
+{
+  "name": "guia-do-caminhoneiro",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-leaflet": "4.2.1"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --if-present --workspaces",
+    "lint": "npm run lint --if-present --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  }
+}
